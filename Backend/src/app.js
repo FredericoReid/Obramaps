@@ -37,7 +37,7 @@ app.post("/processamento_pedidos", function(req, res){
         email: req.body.email, 
         telefone: req.body.telefone,
         titulo: req.body.titulo,
-        descricao: req.body.descricao,
+        descricao: req.body.descricao
     }).save().then(function(){
         res.redirect('http://localhost:3000/pedidos')
     }).catch(function(erro){

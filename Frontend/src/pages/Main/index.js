@@ -5,14 +5,14 @@ import {lazy, Suspense} from 'react';
 // import Produtos from '../../components/Produtos';
 const Cabecalho = lazy(() => import('../../components/Cabecalho'));
 const Carrossel = lazy(() => import('../../components/Carrossel'));
-const Produtos = lazy(() => import('../../components/Casos'));
+const Produtos = lazy(() => import('../../components/Produtos'));
 
 function Main(){
     return(
         <>
             <Suspense fallback={ <p>Carregando...</p> }><Cabecalho /></Suspense>
             <Suspense fallback={ <p>Carregando...</p> }><Carrossel /></Suspense>
-            <Suspense fallback={ <p>Carregando...</p> }><Casos /></Suspense>
+            <Suspense fallback={ <p>Carregando...</p> }><Produtos /></Suspense>
             
         </>
     );

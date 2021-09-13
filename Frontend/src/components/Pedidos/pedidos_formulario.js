@@ -11,13 +11,13 @@ function Pedidos() {
                     <form className="col-lg-12" action='http://localhost:5333/processamento_pedidos' method="POST" >
 
                         <div className="col-12">
-                            <input className="form-control" type="nome_cliente" id="nome" name="nome_cliente" placeholder="Nome completo" required />
+                            <input className="form-control" type="text" id="nome" name="nome_cliente" placeholder="Nome completo" required />
                         </div>
 
                         <br />
 
                         <div className="col-12">
-                            <input className="form-control" type="endereco" id="endereco" name="endereco" placeholder="Endereço para entrega" required />
+                            <input className="form-control" type="text" id="endereco" name="endereco" placeholder="Endereço para entrega" required />
                         </div>
 
                         <br />
@@ -29,18 +29,18 @@ function Pedidos() {
                         <br />
 
                         <div className="col-12">
-                            <input className="form-control" type="telefone" id="telefone" name="telefone" placeholder="Telefone para contato" required />
+                            <input className="form-control" type="number" id="telefone" name="telefone" placeholder="Telefone para contato" required />
                         </div>
 
                         <br />
 
-                        <div className = "col-12 titulo">
+                        <div className = "col-12">
                         <input className="form-control" type="text" id="titulo" name="titulo" placeholder="Titulo" required />
                         </div>
                         
                         <br/>
 
-                        <div className = "col-12 descricao"> 
+                        <div className = "col-12"> 
                         <input className="form-control" type="text" id="descricao" name="descricao" placeholder="Informe a descrição" required />
                         </div>
 

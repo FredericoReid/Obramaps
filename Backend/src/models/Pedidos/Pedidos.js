@@ -15,24 +15,20 @@ const Pedidos = mongoose.Schema({
     },
 
     telefone: {
+        type: Number
+    },
+
+    titulo: {
         type: String
     },
 
-    nome_produto: {
+    descricao: {
         type: String
     },
 
-    valor_unitario: {
-        type: Number
+    informacao_extra: {
+        type: String
     },
-
-    quantidade: {
-        type: Number
-    },
-
-    valor_total: {
-        type: Number
-    }, 
 
 })
 
